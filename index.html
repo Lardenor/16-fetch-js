@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курси валют Приватбанку</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- !Перша табличка -->
+    <!-- !Перша табличка -->
+    <!-- !Перша табличка -->
+<h1>Курси валют Приватбанку</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Валюта</th>
+            <th>Купівля</th>
+            <th>Продаж</th>
+        </tr>
+    </thead>
+    <tbody id="exchange-table">
+    </tbody>
+</table>
+<!-- !Перша табличка -->
+<!-- !Перша табличка -->
+<!-- !Перша табличка -->
+
+<!-- КОнвертор -->
+<!-- КОнвертор -->
+<form>
+    <label for="amount">Сума:</label>
+    <input type="number" id="amount" name="amount" min="0">
+    <br>
+    <label for="currency">Оберіть валюту:</label>
+    <select id="currency" name="currency">
+        <option value="usd">USD</option>
+        <option value="eur">EUR</option>
+    </select>
+    <br>
+    <label for="buy-sell-select">Оберіть наступну операцію: купівля/продаж:</label>
+    <select id="buy-sell-select" name="buy-sell-select">
+        <option value="buy">Купівля</option>
+        <option value="sell">Продаж</option>
+    </select>
+    <br>
+    <button type="button" id="convert-btn">Конвертувати</button>
+    <p id="result"></p>
+</form>
+<!-- КОнвертор -->
+<!-- КОнвертор -->
+<!-- todo Друга табличка -->
+<!-- todo Друга табличка -->
+<!-- todo Друга табличка -->
+<button id="show-more-btn">Показати всі доступні курси валют</button>
+<button id="close-btn" class="hidden">Закрити таблицю</button>
+<table class="table hidden">
+    <thead>
+        <tr>
+            <th>Валюта</th>
+            <th>Купівля</th>
+            <th>Продаж</th>
+        </tr>
+    </thead>
+    <tbody id="more-exchange" >
+    </tbody>
+    </table>
+    <!-- todo Друга табличка -->
+    <!-- todo Друга табличка -->
+    <!-- todo Друга табличка -->
+   
+<!-- <form action="">
+    <label for="amount_2">Сума:</label>
+    <input type="number" id="amount_2" name="amoun_2t" step="0.01"><br><br>
+    
+    <label for="currency_2">Валюта:</label>
+    <select id="currency_2" name="currency_2">
+        <option value="">Виберіть валюту</option>
+    </select><br><br>
+    
+    <label for="operation_2">Операція:</label>
+    <select id="operation_2" name="operation_2">
+        <option value="">Виберіть операцію</option>
+        <option value="buy_2">Купівля</option>
+        <option value="sale_2">Продаж</option>
+    </select><br><br>
+    
+    <button id="convert-btn_2">Конвертувати</button>
+    
+    <p>Результат: <span id="result_2"></span></p>
+</form> -->
+    <script src="./script.js"></script>
+</body>
+</html>
